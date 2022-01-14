@@ -23,6 +23,9 @@ frame:SetWidth(500)
 frame:SetHeight(200)
 frame:SetPoint("TOP", UIParent, "CENTER")
 frame:SetMovable(true)
+frame:EnableMouse(true)
+frame:SetScript("OnMouseDown", frame.StartMoving)
+frame:SetScript("OnMouseUp", frame.StopMovingOrSizing)
 
 -- create a texture
 frame.texture = frame:CreateTexture("MacroAutoComplete_BackgroundTexture")

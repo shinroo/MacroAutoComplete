@@ -1,0 +1,4 @@
+## Interface: 30300
+## Title: Macro Auto-Complete
+## Author: github.com/shinroo
+## Version: 1.0

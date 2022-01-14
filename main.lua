@@ -19,4 +19,4 @@
 
 message('Welcome to Macro Auto-Complete');
 
-MacroAutoComplete_Frame.Show()
+MacroAutoComplete_Frame:Show()

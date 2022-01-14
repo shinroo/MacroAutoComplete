@@ -36,3 +36,12 @@ frame.texture:SetTexture(83,86,90)
 frame.title = frame:CreateFontString("MacroAutoComplete_Title", "OVERLAY", "GameFontNormal")
 frame.title:SetPoint("TOP", 0, 0)
 frame.title:SetText("Macro Auto-Complete")
+
+-- create edit box
+local editBox = CreateFrame("EditBox", "TchinEditBox", frame, "TchinInputBoxTemplate");
+editBox:SetPoint("CENTER", UIParent, "CENTER");
+editBox:SetWidth(300);
+editBox:SetText("Enter a spell name to auto-complete...");
+editBox:SetAutoFocus(false);
+editBox:SetMultiLine(false);
+editBox:SetMaxLetters(200);

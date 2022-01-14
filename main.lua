@@ -39,9 +39,9 @@ frame.title:SetText("Macro Auto-Complete")
 
 -- create edit box
 local editBox = CreateFrame("EditBox", "MacroAutoComplete_EditBox", frame);
-editBox:SetPoint("CENTER", UIParent, "CENTER");
+editBox:SetPoint("CENTER", frame, "CENTER");
 editBox:SetWidth(300);
 editBox:SetText("Enter a spell name to auto-complete...");
-editBox:SetAutoFocus(false);
+editBox:SetAutoFocus(true);
 editBox:SetMultiLine(false);
 editBox:SetMaxLetters(200);

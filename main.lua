@@ -25,6 +25,7 @@ frame:SetPoint("TOP", UIParent, "CENTER")
 
 -- create a texture
 frame.texture = frame:CreateTexture("MacroAutoComplete_BackgroundTexture")
+frame.texture:SetAllPoints(frame)
 frame.texture:SetTexture(83,86,90)
 
 -- give it a title

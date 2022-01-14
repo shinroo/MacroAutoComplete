@@ -17,6 +17,13 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 ]]--
 
-message('Welcome to Macro Auto-Complete');
+--[[ Create Frame ]]--
+local frame = CreateFrame("Frame", "MyAddon_Frame")
+frame:SetSize(100, 100)
+frame:ClearAllPoints()
+frame:SetPoint("TOPLEFT")
 
-MacroAutoComplete_Frame:Show()
+--[[ Create Frame Texture ]]--
+frame.texture = CreateTexture("$parent_Texture")
+frame.texture:SetAllPoints(frame)
+frame.texture:SetTexture(" ")

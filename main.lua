@@ -25,7 +25,7 @@ frame:SetPoint("CENTER", UIParent, "TOP")
 
 -- create a texture
 local texture = frame:CreateTexture("MacroAutoComplete_BackgroundTexture")
-texture:SetColorTexture(83,86,90)
+texture:SetTexture(83,86,90)
 frame.skeleton = texture
 
 -- give it a title

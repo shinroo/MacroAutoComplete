@@ -22,6 +22,7 @@ local frame = CreateFrame("Frame", "MacroAutoComplete_Main", UIParent)
 frame:SetWidth(500)
 frame:SetHeight(200)
 frame:SetPoint("TOP", UIParent, "CENTER")
+frame:SetMovable(true)
 
 -- create a texture
 frame.texture = frame:CreateTexture("MacroAutoComplete_BackgroundTexture")

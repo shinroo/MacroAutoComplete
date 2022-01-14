@@ -24,9 +24,8 @@ frame:SetHeight(200)
 frame:SetPoint("CENTER", UIParent, "TOP")
 
 -- create a texture
-local texture = frame:CreateTexture("MacroAutoComplete_BackgroundTexture")
-texture:SetTexture(83,86,90)
-frame.skeleton = texture
+frame.texture = frame:CreateTexture("MacroAutoComplete_BackgroundTexture")
+frame.texture:SetTexture(83,86,90)
 
 -- give it a title
 frame.title = frame:CreateFontString("MacroAutoComplete_Title", "OVERLAY", "GameFontNormal")

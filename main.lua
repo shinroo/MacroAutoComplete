@@ -30,7 +30,7 @@ frame:SetScript("OnMouseUp", frame.StopMovingOrSizing)
 -- create a texture
 frame.texture = frame:CreateTexture("MacroAutoComplete_BackgroundTexture")
 frame.texture:SetAllPoints(frame)
-frame.texture:SetTexture(83,86,90)
+frame.texture:SetTexture(120,120,120)
 
 -- give it a title
 frame.title = frame:CreateFontString("MacroAutoComplete_Title", "OVERLAY", "GameFontNormal")
@@ -39,9 +39,13 @@ frame.title:SetText("Macro Auto-Complete")
 
 -- create edit box
 local editBox = CreateFrame("EditBox", "MacroAutoComplete_EditBox", frame);
-editBox:SetPoint("CENTER", frame, "CENTER");
+editBox:SetPoint("CENTER", frame, 0, 0);
 editBox:SetWidth(300);
 editBox:SetText("Enter a spell name to auto-complete...");
 editBox:SetAutoFocus(true);
 editBox:SetMultiLine(false);
 editBox:SetMaxLetters(200);
+
+editBox.texture = frame:CreateTexture("MacroAutoComplete_BackgroundTexture")
+editBox.texture:SetAllPoints(editBox)
+editBox.texture:SetTexture(200,200,200)

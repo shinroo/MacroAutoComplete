@@ -18,25 +18,17 @@
 ]]--
 
 -- create a frame
-local frame = CreateFrame("Frame", "MacroAutoComplete", UIParent)
+local frame = CreateFrame("Frame", "MacroAutoComplete_Main", UIParent)
 frame:SetWidth(500)
 frame:SetHeight(200)
 frame:SetPoint("CENTER", UIParent, "CENTER")
 
 -- give it a background texture
-frame.skeleton = frame:CreateTexture("MacroAutoComplete_BorderFrame", "BORDER")
+frame.skeleton = frame:CreateTexture("MacroAutoComplete_BackgroundTexture", "BACKGROUND")
 frame.skeleton:SetPoint("TOPLEFT")
-frame.skeleton:SetTexture("Interface\\BankFrame\\UI-BankFrame")
-
--- give it an icon
-frame.icon = frame:CreateTexture("MacroAutoComplete_Icon", "BACKGROUND")
-frame.icon:SetWidth(60)
-frame.icon:SetHeight(60)
-frame.icon:SetPoint("TOPLEFT", 7, -6)
-frame.icon:SetTexture("Interface\\Icons\\INV_Misc_EngGizmos_17")
-SetPortraitToTexture(frame.icon, "Interface\\Icons\\INV_Misc_EngGizmos_17")
+frame.skeleton:SetTexture("Interface\\HelpFrame")
 
 -- give it a title
 frame.title = frame:CreateFontString("MacroAutoComplete_Title", "OVERLAY", "GameFontNormal")
-frame.title:SetPoint("TOP", 0, -18)
+frame.title:SetPoint("TOP", 0, 0)
 frame.title:SetText("Macro Auto-Complete")

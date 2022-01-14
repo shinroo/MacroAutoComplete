@@ -3,5 +3,4 @@
 ## Author: github.com/shinroo
 ## Version: 1.0
 
-main.xml
 main.lua

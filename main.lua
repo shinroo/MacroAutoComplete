@@ -18,3 +18,5 @@
 ]]--
 
 message('Welcome to Macro Auto-Complete');
+
+MacroAutoComplete_Frame.Show()

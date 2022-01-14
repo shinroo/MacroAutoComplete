@@ -2,3 +2,5 @@
 ## Title: Macro Auto-Complete
 ## Author: github.com/shinroo
 ## Version: 1.0
+
+main.lua

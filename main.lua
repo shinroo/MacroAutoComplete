@@ -38,7 +38,7 @@ frame.title:SetPoint("TOP", 0, 0)
 frame.title:SetText("Macro Auto-Complete")
 
 -- create edit box
-local editBox = CreateFrame("EditBox", "TchinEditBox", frame, "TchinInputBoxTemplate");
+local editBox = CreateFrame("EditBox", "MacroAutoComplete_EditBox", frame);
 editBox:SetPoint("CENTER", UIParent, "CENTER");
 editBox:SetWidth(300);
 editBox:SetText("Enter a spell name to auto-complete...");
